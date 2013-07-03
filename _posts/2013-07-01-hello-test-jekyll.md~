@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Hello Test Jekyll"
+description: ""
+category: 
+tags: []
+---
+{% include JB/setup %}
+Test

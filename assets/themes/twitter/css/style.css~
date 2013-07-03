@@ -84,6 +84,3 @@ body {
     float: right;
     width: 65px;
 }
-.about {
-    clear: left;
-}

@@ -3,6 +3,7 @@
     <h1>{{ page.title }}</h1> 
 </div>
 {% endif %}
+{{ page.weight }}
 <div class="row">
   <div class="span14">
     {{ content }}
