@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "Hello Test Jekyll"
+title: "Hello Jekyll"
 description: ""
-category: 
+category: life
 tags: []
 ---
 {% include JB/setup %}
-Test
+这几天一直在鼓捣着jekyll，这果然是个强大的东西啊，让我第一次感觉到写Blog也能如此酷，相见恨晚啊！
+
+之前我也写过一些博客，最开始是在[CSDN](http://blog.csdn.net/heqichanggg)上，后面又在[博客园](http://www.cnblogs.com/heqichang)，
