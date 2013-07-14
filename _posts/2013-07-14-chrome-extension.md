@@ -3,7 +3,8 @@ layout: post
 title: "开发Chrome Extension截取你微博的帐号密码"
 description: ""
 category: Chrome Extension
-tags: [javascript,Chrome Extension]
+tags: [javascript, Chrome Extension]
+code: true
 ---
 {% include JB/setup %}
 Google允许开发者对Chrome浏览器做扩展，所以有了之前火爆的12306抢票软件，我
