@@ -1,7 +1,0 @@
----
-layout: page
-title: Welcome
----
-{% include JB/setup %}
-<h1>Test</h1>
-
