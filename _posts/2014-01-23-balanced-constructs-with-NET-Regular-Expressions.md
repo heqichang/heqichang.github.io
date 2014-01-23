@@ -67,27 +67,27 @@ static string[] extractData(string input)
             (?(open)(?!))
         }", RegexOptions.IgnorePatternWhitespace);
 
-        string clipsString = string.Empty;
-        List<string> clipsList = new List<string>();
+    string clipsString = string.Empty;
+    List<string> clipsList = new List<string>();
 
-        Match m1 = r1.Match(input);
-        if (m1.Success)
-        {
-            clipsString = m1.Groups[1].Value;
-        }
-
-        var m2s = r2.Matches(clipsString);
-        foreach (Match m2 in m2s)
-        {
-            clipsList.Add(m2.Groups[0].Value);
-        }
-
-        return clipsList.ToArray();
+    Match m1 = r1.Match(input);
+    if (m1.Success)
+    {
+        clipsString = m1.Groups[1].Value;
     }
+
+    var m2s = r2.Matches(clipsString);
+    foreach (Match m2 in m2s)
+    {
+        clipsList.Add(m2.Groups[0].Value);
+    }
+
+    return clipsList.ToArray();
+}
 {% endhighlight %}
 
 关于正则平衡组的详细说明，网上已有好多人写出详解了。具体链接参考如下：
 
-[正则表达式——详细讲解平衡组]http://blog.csdn.net/zm2714/article/details/7946437
+[正则表达式——详细讲解平衡组](http://blog.csdn.net/zm2714/article/details/7946437)
 
-[Matching Balanced Constructs with .NET Regular Expressions]http://weblogs.asp.net/whaggard/archive/2005/02/20/377025.aspx
+[Matching Balanced Constructs with .NET Regular Expressions](http://weblogs.asp.net/whaggard/archive/2005/02/20/377025.aspx)
