@@ -18,16 +18,16 @@ code: true
       "clipRefId": "1f3a68a05cf6d5efcc00e5c416c92964d252cbc7",
       "contentId": "842166",
       "programTitle": "Porter Ridge",
-      \\...
+      //...
       "aspectRatio": "16:9"
     },
     {
       "clipRefId": "5f9822763f58fae2ffbf050b64ffe2b0b9c787ed"
-      \\...
+      //...
     },
     {
       "clipRefId": "5f9822763f58fae2ffbf050b64ffe2b0b9c787ed"
-      \\...
+      //...
     }]};
 {% endhighlight %}
 
