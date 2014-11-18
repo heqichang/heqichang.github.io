@@ -47,12 +47,7 @@ app.controller('mainCtr', function($scope) {
 
 html上的代码调用如下：
 {% highlight html %}
-var myArray = ['h', 'e', 'q', 'c'];
-for(var i in myArray) {
-    setTimeout(function(){
-        console.log(myArray[i]);
-    }, 100 * (i + 1));
-}
+<div my-directive number="myNum" on-click="onClick()"></div>
 {% endhighlight %}
 
 之前我猜想的结果是这样的：
@@ -70,6 +65,7 @@ In Directive: 1
 In controller: 0
 
 In Watch: 1
+
 
 也就是在directive中的function还没结束，调用controller中的callback，这时controller中的数据并没有得到更新，所以需要让directive中的function运行完成之后再调用就没问题了。修改代码如下：
 {% highlight javascript %}
@@ -103,6 +99,7 @@ In Directive:  1
 In Watch: 1
 
 In controller: 1
+
 
 虽然结果并不是我最先猜测的那样，但至少解决了directive中回调controller方法的数据同步问题。
 
