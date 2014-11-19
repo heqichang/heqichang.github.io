@@ -5,6 +5,7 @@ description: ""
 category: JavaScript
 tags: [JavaScript, AngularJS]
 Code: true
+markdown: redcarpet
 ---
 {% include JB/setup %}
 
