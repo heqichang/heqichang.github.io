@@ -31,7 +31,7 @@ Code: true
 </head>
 <body ng-controller="mainCtr">
 <ul ng-repeat="num in numbers | filter : customFilter" ng-show="$even">
-    <li>{{"{{num}}"}}</li>
+    <li>{{"{{num"}}}}</li>
     <li ng-show="numbers[$index + 1]">{{numbers[$index + 1]}}</li>
 </ul>
 <script src="bower_components/angularjs/angular.js"></script>
