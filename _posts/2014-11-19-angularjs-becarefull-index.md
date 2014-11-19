@@ -10,7 +10,7 @@ Code: true
 
 偶尔在写ng-repeat的时候，会用到$index这个变量，但要注意，如果ng-repeat中加入了filter就要小心了。比如下面代码：
 
-{% raw %}
+```html
 
 <!DOCTYPE html>
 <html ng-app="myApp">
@@ -37,11 +37,13 @@ Code: true
 <script src="controller.js"></script>
 </body>
 </html>
-{% endraw %}
+
+```
 
 controller.js的代码如下：
 
-{% highlight javascript %}
+```javascript
+
 (function(){
     var app = angular.module('myApp', []);
 
@@ -59,7 +61,7 @@ controller.js的代码如下：
     }]);
 })();
 
-{% endhighlight %}
+```
 
 
 
@@ -82,13 +84,13 @@ controller.js的代码如下：
 
 
 
-{% raw %}
+```html
 
 <ul ng-repeat="num in (numByFilter = (numbers | filter : customFilter))" ng-show="$even">
     <li>{{num}}</li>
     <li ng-show="numByFilter[$index + 1]">{{numByFilter[$index + 1]}}</li>
 </ul>
  
-{% endraw %}
+```
 
 
