@@ -13,19 +13,19 @@ code: true
 
 在使用storyBoard的时候，经常想把一些UIView跟UIViewController中的UIView的边缘对齐。等我把元素拖拽跟容器边缘对齐时，添加约束的时候，XCode会很“聪明“的使用-16pt来约束，而不是0。
 
-![Add new constraints](/assets/20150701/add_new_constraints.png)
+![Add new constraints](/assets/images/20150701/add_new_constraints.png)
 
 下图是我在xcode设置的约束，Box1是Leading相对于superview的leading margin设置，Box2是Box2的leading maring相对于superview的leading margin设置的， Box3就是leading相对于superview的leading margin间距-16来设置的
 
-![In Xcode AutoLayout](/assets/20150701/in_xcode.png)
+![In Xcode AutoLayout](/assets/images/20150701/in_xcode.png)
 
 运行在ios8实机下的效果跟XCode里一样
 
-![In ios8](/assets/20150701/in_ios8.png)
+![In ios8](/assets/images/20150701/in_ios8.png)
 
 但运行在ios7实机下的效果却是这样的
 
-![In ios7](/assets/20150701/in_ios7.png)
+![In ios7](/assets/images/20150701/in_ios7.png)
 
 在ios7下，layoutMargins这个属性没有暴露，但是autoLayout中却应该是存在margin的，边距是8。在ios8时，Root View的间距改为了16（默认的UIView的间距还是8,8,8,8）。
 
@@ -33,7 +33,7 @@ code: true
 
 那如何解决这个适配问题？在autolayout中不要相对于margin进行约束就行了。不清楚苹果为什么要做这个margin哩？
 
-![uncheck margin](/assets/20150701/uncheck_margin.png)
+![uncheck margin](/assets/images/20150701/uncheck_margin.png)
 
 <br />
 参考链接：
